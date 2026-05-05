@@ -10,8 +10,19 @@ import SwiftUI
 @main
 struct LBGSystemiOSTestApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+            WindowGroup {
+
+                let api = APIService()
+                let repo = PostRepositoryImpl(api: api)
+                let useCase = FetchPostsUseCaseImpl(repository: repo)
+                let network = NetworkMonitor()
+
+                ContentView(
+                    vm: PostViewModel(
+                        useCase: useCase,
+                        network: network
+                    )
+                )
+            }
         }
-    }
 }

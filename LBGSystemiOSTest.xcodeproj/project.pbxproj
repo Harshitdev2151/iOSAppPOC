@@ -14,7 +14,17 @@
 		EE2A1D792FA9C7D000F10518 /* LBGSystemiOSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D782FA9C7D000F10518 /* LBGSystemiOSTestTests.swift */; };
 		EE2A1D832FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D822FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift */; };
 		EE2A1D852FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D842FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift */; };
-		EE2A1D932FA9CD2700F10518 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE2A1D922FA9CD2700F10518 /* .swiftlint.yml */; };
+		EE2A1D952FA9CF4200F10518 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE2A1D942FA9CF4200F10518 /* .swiftlint.yml */; };
+		EE2A1D972FAAA77000F10518 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D962FAAA77000F10518 /* Post.swift */; };
+		EE2A1D992FAAA78B00F10518 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D982FAAA78B00F10518 /* APIService.swift */; };
+		EE2A1D9B2FAAA7AD00F10518 /* PostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D9A2FAAA7AD00F10518 /* PostRepositoryImpl.swift */; };
+		EE2A1D9D2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D9C2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift */; };
+		EE2A1D9F2FAAA7EB00F10518 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */; };
+		EE2A1DA12FAAA7FE00F10518 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */; };
+		EE932FDA2FAAAD06003AAE83 /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FD92FAAAD06003AAE83 /* MockNetwork.swift */; };
+		EE932FDC2FAAAD1C003AAE83 /* PostViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FDB2FAAAD1C003AAE83 /* PostViewModelTests.swift */; };
+		EE932FDE2FAAAE03003AAE83 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FDD2FAAAE03003AAE83 /* MockAPIService.swift */; };
+		EE932FE02FAAAEC8003AAE83 /* MockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FDF2FAAAEC8003AAE83 /* MockRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +55,17 @@
 		EE2A1D7E2FA9C7D000F10518 /* LBGSystemiOSTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBGSystemiOSTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2A1D822FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBGSystemiOSTestUITests.swift; sourceTree = "<group>"; };
 		EE2A1D842FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBGSystemiOSTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EE2A1D922FA9CD2700F10518 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		EE2A1D942FA9CF4200F10518 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		EE2A1D962FAAA77000F10518 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EE2A1D982FAAA78B00F10518 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		EE2A1D9A2FAAA7AD00F10518 /* PostRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImpl.swift; sourceTree = "<group>"; };
+		EE2A1D9C2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCaseImpl.swift; sourceTree = "<group>"; };
+		EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		EE932FD92FAAAD06003AAE83 /* MockNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
+		EE932FDB2FAAAD1C003AAE83 /* PostViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModelTests.swift; sourceTree = "<group>"; };
+		EE932FDD2FAAAE03003AAE83 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		EE932FDF2FAAAEC8003AAE83 /* MockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +96,7 @@
 		EE2A1D5B2FA9C7CD00F10518 = {
 			isa = PBXGroup;
 			children = (
-				EE2A1D922FA9CD2700F10518 /* .swiftlint.yml */,
+				EE2A1D942FA9CF4200F10518 /* .swiftlint.yml */,
 				EE2A1D662FA9C7CD00F10518 /* LBGSystemiOSTest */,
 				EE2A1D772FA9C7D000F10518 /* LBGSystemiOSTestTests */,
 				EE2A1D812FA9C7D000F10518 /* LBGSystemiOSTestUITests */,
@@ -101,6 +121,12 @@
 				EE2A1D692FA9C7CD00F10518 /* ContentView.swift */,
 				EE2A1D6B2FA9C7D000F10518 /* Assets.xcassets */,
 				EE2A1D6D2FA9C7D000F10518 /* Preview Content */,
+				EE2A1D962FAAA77000F10518 /* Post.swift */,
+				EE2A1D982FAAA78B00F10518 /* APIService.swift */,
+				EE2A1D9A2FAAA7AD00F10518 /* PostRepositoryImpl.swift */,
+				EE2A1D9C2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift */,
+				EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */,
+				EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */,
 			);
 			path = LBGSystemiOSTest;
 			sourceTree = "<group>";
@@ -117,6 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				EE2A1D782FA9C7D000F10518 /* LBGSystemiOSTestTests.swift */,
+				EE932FD92FAAAD06003AAE83 /* MockNetwork.swift */,
+				EE932FDB2FAAAD1C003AAE83 /* PostViewModelTests.swift */,
+				EE932FDD2FAAAE03003AAE83 /* MockAPIService.swift */,
+				EE932FDF2FAAAEC8003AAE83 /* MockRepository.swift */,
 			);
 			path = LBGSystemiOSTestTests;
 			sourceTree = "<group>";
@@ -235,7 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE2A1D932FA9CD2700F10518 /* .swiftlint.yml in Resources */,
+				EE2A1D952FA9CF4200F10518 /* .swiftlint.yml in Resources */,
 				EE2A1D6F2FA9C7D000F10518 /* Preview Assets.xcassets in Resources */,
 				EE2A1D6C2FA9C7D000F10518 /* Assets.xcassets in Resources */,
 			);
@@ -260,6 +290,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		EE2A1D912FA9CCA800F10518 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -282,8 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2A1DA12FAAA7FE00F10518 /* PostViewModel.swift in Sources */,
+				EE2A1D972FAAA77000F10518 /* Post.swift in Sources */,
 				EE2A1D6A2FA9C7CD00F10518 /* ContentView.swift in Sources */,
+				EE2A1D992FAAA78B00F10518 /* APIService.swift in Sources */,
 				EE2A1D682FA9C7CD00F10518 /* LBGSystemiOSTestApp.swift in Sources */,
+				EE2A1D9D2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift in Sources */,
+				EE2A1D9B2FAAA7AD00F10518 /* PostRepositoryImpl.swift in Sources */,
+				EE2A1D9F2FAAA7EB00F10518 /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +328,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE932FDE2FAAAE03003AAE83 /* MockAPIService.swift in Sources */,
+				EE932FDC2FAAAD1C003AAE83 /* PostViewModelTests.swift in Sources */,
+				EE932FE02FAAAEC8003AAE83 /* MockRepository.swift in Sources */,
+				EE932FDA2FAAAD06003AAE83 /* MockNetwork.swift in Sources */,
 				EE2A1D792FA9C7D000F10518 /* LBGSystemiOSTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
