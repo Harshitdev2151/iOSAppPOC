@@ -1,0 +1,16 @@
+//
+//  .swiftlint.yml
+//  LBGSystemiOSTest
+//
+//  Created by Harshit Kumar on 05/05/26.
+//
+
+disabled_rules:
+  - line_length
+
+opt_in_rules:
+  - empty_count
+  - closure_spacing
+
+identifier_name:
+  min_length: 2

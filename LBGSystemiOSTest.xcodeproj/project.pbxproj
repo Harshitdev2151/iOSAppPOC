@@ -14,6 +14,7 @@
 		EE2A1D792FA9C7D000F10518 /* LBGSystemiOSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D782FA9C7D000F10518 /* LBGSystemiOSTestTests.swift */; };
 		EE2A1D832FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D822FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift */; };
 		EE2A1D852FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D842FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift */; };
+		EE2A1D932FA9CD2700F10518 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE2A1D922FA9CD2700F10518 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		EE2A1D7E2FA9C7D000F10518 /* LBGSystemiOSTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBGSystemiOSTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2A1D822FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBGSystemiOSTestUITests.swift; sourceTree = "<group>"; };
 		EE2A1D842FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBGSystemiOSTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE2A1D922FA9CD2700F10518 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		EE2A1D5B2FA9C7CD00F10518 = {
 			isa = PBXGroup;
 			children = (
+				EE2A1D922FA9CD2700F10518 /* .swiftlint.yml */,
 				EE2A1D662FA9C7CD00F10518 /* LBGSystemiOSTest */,
 				EE2A1D772FA9C7D000F10518 /* LBGSystemiOSTestTests */,
 				EE2A1D812FA9C7D000F10518 /* LBGSystemiOSTestUITests */,
@@ -137,6 +140,7 @@
 				EE2A1D602FA9C7CD00F10518 /* Sources */,
 				EE2A1D612FA9C7CD00F10518 /* Frameworks */,
 				EE2A1D622FA9C7CD00F10518 /* Resources */,
+				EE2A1D912FA9CCA800F10518 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -231,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2A1D932FA9CD2700F10518 /* .swiftlint.yml in Resources */,
 				EE2A1D6F2FA9C7D000F10518 /* Preview Assets.xcassets in Resources */,
 				EE2A1D6C2FA9C7D000F10518 /* Assets.xcassets in Resources */,
 			);
@@ -251,6 +256,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE2A1D912FA9CCA800F10518 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE2A1D602FA9C7CD00F10518 /* Sources */ = {
