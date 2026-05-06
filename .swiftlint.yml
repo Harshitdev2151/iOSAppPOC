@@ -1,28 +1,22 @@
-# MARK: - Disabled Rules (reduce noise)
 disabled_rules:
   - trailing_whitespace
   - todo
-  - line_length
 
-# MARK: - Opt-in Rules (good practices)
 opt_in_rules:
   - empty_count
   - force_unwrapping
   - implicitly_unwrapped_optional
-  - unused_import
-  - redundant_nil_coalescing
 
-# MARK: - Included folders (your source)
+analyzer_rules:
+  - unused_import
+
 included:
   - LBGSystemiOSTest
 
-# MARK: - Excluded folders (important)
 excluded:
   - Pods
   - Carthage
   - DerivedData
-
-# MARK: - Custom Rules
 
 line_length:
   warning: 120
@@ -44,5 +38,4 @@ identifier_name:
   min_length: 2
   max_length: 40
 
-# MARK: - Reporter
 reporter: "xcode"
