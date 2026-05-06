@@ -80,8 +80,8 @@ struct PostCardView: View {
             Text("Post #\(post.id)")
                 .font(.caption)
                 .foregroundColor(.gray)
-
             Text(post.title.capitalized)
+                .accessibilityIdentifier("postTitle")
                 .font(.headline)
                 .foregroundColor(.primary)
                 .lineLimit(2)

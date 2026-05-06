@@ -29,6 +29,7 @@
 		EE932FF62FAB2E0D003AAE83 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FF52FAB2E0D003AAE83 /* DetailView.swift */; };
 		EEF5BC6D2FABA1B600EDD31B /* PostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5BC6C2FABA1B600EDD31B /* PostRepositoryTests.swift */; };
 		EEF5BC6F2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5BC6E2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift */; };
+		EEF5BC732FABA88800EDD31B /* DetailViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5BC722FABA88800EDD31B /* DetailViewUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		EEF5BC6A2FAB425C00EDD31B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		EEF5BC6C2FABA1B600EDD31B /* PostRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryTests.swift; sourceTree = "<group>"; };
 		EEF5BC6E2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCaseTests.swift; sourceTree = "<group>"; };
+		EEF5BC722FABA88800EDD31B /* DetailViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			children = (
 				EE2A1D822FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift */,
 				EE2A1D842FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift */,
+				EEF5BC722FABA88800EDD31B /* DetailViewUITests.swift */,
 			);
 			path = LBGSystemiOSTestUITests;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE2A1D832FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift in Sources */,
+				EEF5BC732FABA88800EDD31B /* DetailViewUITests.swift in Sources */,
 				EE2A1D852FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

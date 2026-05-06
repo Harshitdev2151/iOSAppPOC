@@ -6,7 +6,6 @@
 //
 import XCTest
 @testable import LBGSystemiOSTest
-
 @MainActor
 final class PostViewModelTests: XCTestCase {
 
