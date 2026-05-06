@@ -23,11 +23,11 @@ final class DetailViewUITests: XCTestCase {
 
         // Navigate to detail screen
         // Wait for first cell
-        let firstCell = app.cells.firstMatch
+        let post = app.staticTexts["postTitle"].firstMatch
 
-        XCTAssertTrue(firstCell.waitForExistence(timeout: 10))
+        XCTAssertTrue(post.waitForExistence(timeout: 10))
 
-        firstCell.tap()
+        post.tap()
 
         // Verify ID text exists
         XCTAssertTrue(app.staticTexts["postIDText"].exists)
