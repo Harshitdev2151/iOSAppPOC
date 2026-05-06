@@ -27,6 +27,8 @@
 		EE932FEC2FAB2CDA003AAE83 /* FetchPostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FEB2FAB2CDA003AAE83 /* FetchPostsUseCase.swift */; };
 		EE932FF12FAB2D8D003AAE83 /* PostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FF02FAB2D8D003AAE83 /* PostRepositoryImpl.swift */; };
 		EE932FF62FAB2E0D003AAE83 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FF52FAB2E0D003AAE83 /* DetailView.swift */; };
+		EEF5BC6D2FABA1B600EDD31B /* PostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5BC6C2FABA1B600EDD31B /* PostRepositoryTests.swift */; };
+		EEF5BC6F2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5BC6E2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		EE932FF02FAB2D8D003AAE83 /* PostRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImpl.swift; sourceTree = "<group>"; };
 		EE932FF52FAB2E0D003AAE83 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		EEF5BC6A2FAB425C00EDD31B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		EEF5BC6C2FABA1B600EDD31B /* PostRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryTests.swift; sourceTree = "<group>"; };
+		EEF5BC6E2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 				EE932FDB2FAAAD1C003AAE83 /* PostViewModelTests.swift */,
 				EE932FDD2FAAAE03003AAE83 /* MockAPIService.swift */,
 				EE932FDF2FAAAEC8003AAE83 /* MockRepository.swift */,
+				EEF5BC6C2FABA1B600EDD31B /* PostRepositoryTests.swift */,
+				EEF5BC6E2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift */,
 			);
 			path = LBGSystemiOSTestTests;
 			sourceTree = "<group>";
@@ -444,7 +450,9 @@
 			files = (
 				EE932FDE2FAAAE03003AAE83 /* MockAPIService.swift in Sources */,
 				EE932FDC2FAAAD1C003AAE83 /* PostViewModelTests.swift in Sources */,
+				EEF5BC6F2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift in Sources */,
 				EE932FE02FAAAEC8003AAE83 /* MockRepository.swift in Sources */,
+				EEF5BC6D2FABA1B600EDD31B /* PostRepositoryTests.swift in Sources */,
 				EE932FDA2FAAAD06003AAE83 /* MockNetwork.swift in Sources */,
 				EE2A1D792FA9C7D000F10518 /* LBGSystemiOSTestTests.swift in Sources */,
 			);

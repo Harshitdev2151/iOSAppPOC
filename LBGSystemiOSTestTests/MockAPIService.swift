@@ -11,21 +11,15 @@ import Foundation
 final class MockAPIService: APIServiceProtocol {
 
     var shouldFail = false
-    var returnEmpty = false
 
     func fetchPosts() async throws -> [Post] {
-
         if shouldFail {
             throw URLError(.badServerResponse)
         }
 
-        if returnEmpty {
-            return []
-        }
-
         return [
-            Post(id: 1, title: "Test Post 1"),
-            Post(id: 2, title: "Test Post 2")
+            Post(id: 1, title: "Mock API 1"),
+            Post(id: 2, title: "Mock API 2")
         ]
     }
 }

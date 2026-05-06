@@ -8,13 +8,24 @@
 import Foundation
 import SwiftUI
 struct DetailView: View {
+
     let post: Post
 
     var body: some View {
-        VStack {
-            Text("ID: \(post.id)")
-            Text(post.title)
+        VStack(spacing: 20) {
+
+            Text("Post ID: \(post.id)")
+                .font(.caption)
+                .foregroundColor(.gray)
+
+            Text(post.title.capitalized)
+                .font(.title2)
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+
+            Spacer()
         }
-        .navigationTitle("Detail")
+        .padding()
+        .navigationTitle("Details")
     }
 }
