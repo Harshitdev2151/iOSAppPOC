@@ -15,28 +15,23 @@ final class PostViewModel: ObservableObject {
     @Published var errorMessage: String?
 
     private let useCase: FetchPostsUseCase
-    private let network: NetworkMonitoring
 
-    init(useCase: FetchPostsUseCase,
-         network: NetworkMonitoring) {
+    init(useCase: FetchPostsUseCase) {
         self.useCase = useCase
-        self.network = network
     }
 
     func fetchPosts() async {
-
-        guard network.isConnected else {
-            errorMessage = "No Internet"
-            return
-        }
-
         isLoading = true
         errorMessage = nil
 
         do {
             posts = try await useCase.execute()
         } catch {
-            errorMessage = "Failed to load data"
+            if (error as? URLError)?.code == .notConnectedToInternet {
+                errorMessage = "No Internet"
+            } else {
+                errorMessage = "Failed to load data"
+            }
         }
 
         isLoading = false

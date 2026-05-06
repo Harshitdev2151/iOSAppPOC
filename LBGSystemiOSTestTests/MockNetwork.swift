@@ -10,7 +10,5 @@ import Foundation
 
 final class MockNetwork: NetworkMonitoring {
     var isConnected: Bool
-    init(_ connected: Bool) {
-        self.isConnected = connected
-    }
+    init(_ connected: Bool) { self.isConnected = connected }
 }

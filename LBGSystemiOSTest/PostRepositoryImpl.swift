@@ -14,12 +14,17 @@ protocol PostRepository {
 final class PostRepositoryImpl: PostRepository {
 
     private let api: APIServiceProtocol
+    private let network: NetworkMonitoring
 
-    init(api: APIServiceProtocol) {
+    init(api: APIServiceProtocol, network: NetworkMonitoring) {
         self.api = api
+        self.network = network
     }
 
     func getPosts() async throws -> [Post] {
-        try await api.fetchPosts()
+        guard network.isConnected else {
+            throw URLError(.notConnectedToInternet)
+        }
+        return try await api.fetchPosts()
     }
 }

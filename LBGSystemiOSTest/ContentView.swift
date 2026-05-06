@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
-import SwiftUI
-
 struct ContentView: View {
 
     @StateObject var vm: PostViewModel
@@ -34,8 +30,6 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Posts")
-
-            // 👇 Navigation destination
             .navigationDestination(for: Post.self) { post in
                 DetailView(post: post)
             }
@@ -46,19 +40,14 @@ struct ContentView: View {
     }
 }
 
-import SwiftUI
-
 struct DetailView: View {
-
     let post: Post
 
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Post ID: \(post.id)")
+        VStack {
+            Text("ID: \(post.id)")
             Text(post.title)
-                .font(.title)
         }
-        .padding()
         .navigationTitle("Detail")
     }
 }

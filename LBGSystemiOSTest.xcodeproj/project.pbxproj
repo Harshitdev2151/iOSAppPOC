@@ -25,6 +25,7 @@
 		EE932FDC2FAAAD1C003AAE83 /* PostViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FDB2FAAAD1C003AAE83 /* PostViewModelTests.swift */; };
 		EE932FDE2FAAAE03003AAE83 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FDD2FAAAE03003AAE83 /* MockAPIService.swift */; };
 		EE932FE02FAAAEC8003AAE83 /* MockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FDF2FAAAEC8003AAE83 /* MockRepository.swift */; };
+		EE932FE22FAAC5D7003AAE83 /* JailbreakService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FE12FAAC5D7003AAE83 /* JailbreakService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		EE932FDB2FAAAD1C003AAE83 /* PostViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModelTests.swift; sourceTree = "<group>"; };
 		EE932FDD2FAAAE03003AAE83 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 		EE932FDF2FAAAEC8003AAE83 /* MockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
+		EE932FE12FAAC5D7003AAE83 /* JailbreakService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				EE2A1D9C2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift */,
 				EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */,
 				EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */,
+				EE932FE12FAAC5D7003AAE83 /* JailbreakService.swift */,
 			);
 			path = LBGSystemiOSTest;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				EE2A1D6A2FA9C7CD00F10518 /* ContentView.swift in Sources */,
 				EE2A1D992FAAA78B00F10518 /* APIService.swift in Sources */,
 				EE2A1D682FA9C7CD00F10518 /* LBGSystemiOSTestApp.swift in Sources */,
+				EE932FE22FAAC5D7003AAE83 /* JailbreakService.swift in Sources */,
 				EE2A1D9D2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift in Sources */,
 				EE2A1D9B2FAAA7AD00F10518 /* PostRepositoryImpl.swift in Sources */,
 				EE2A1D9F2FAAA7EB00F10518 /* NetworkMonitor.swift in Sources */,

@@ -12,17 +12,12 @@ struct LBGSystemiOSTestApp: App {
     var body: some Scene {
             WindowGroup {
 
-                let api = APIService()
-                let repo = PostRepositoryImpl(api: api)
-                let useCase = FetchPostsUseCaseImpl(repository: repo)
                 let network = NetworkMonitor()
+                let api = APIService()
+                let repo = PostRepositoryImpl(api: api, network: network)
+                let useCase = FetchPostsUseCaseImpl(repository: repo)
 
-                ContentView(
-                    vm: PostViewModel(
-                        useCase: useCase,
-                        network: network
-                    )
-                )
+                ContentView(vm: PostViewModel(useCase: useCase))
             }
         }
 }
