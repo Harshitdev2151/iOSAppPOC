@@ -17,11 +17,9 @@ struct ContentView: View {
             Group {
                 if vm.isLoading {
                     ProgressView()
-                }
-                else if let error = vm.errorMessage {
+                } else if let error = vm.errorMessage {
                     Text(error)
-                }
-                else {
+                } else {
                     List(vm.posts) { post in
                         NavigationLink(value: post) {
                             Text(post.title)

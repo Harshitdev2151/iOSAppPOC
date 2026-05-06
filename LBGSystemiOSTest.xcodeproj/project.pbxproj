@@ -128,7 +128,6 @@
 				EE932FE32FAB2BAD003AAE83 /* App */,
 				EE2A1D6B2FA9C7D000F10518 /* Assets.xcassets */,
 				EE2A1D6D2FA9C7D000F10518 /* Preview Content */,
-				EE932FE12FAAC5D7003AAE83 /* JailbreakService.swift */,
 			);
 			path = LBGSystemiOSTest;
 			sourceTree = "<group>";
@@ -183,9 +182,10 @@
 		EE932FE52FAB2C06003AAE83 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EEF5BC6B2FAB497200EDD31B /* Security */,
 				EE932FEF2FAB2D70003AAE83 /* Repository */,
 				EE932FEE2FAB2D57003AAE83 /* Network */,
-				EE932FED2FAB2D43003AAE83 /* API */,
+				EE932FED2FAB2D43003AAE83 /* Remote */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -214,12 +214,12 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
-		EE932FED2FAB2D43003AAE83 /* API */ = {
+		EE932FED2FAB2D43003AAE83 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
 				EE2A1D982FAAA78B00F10518 /* APIService.swift */,
 			);
-			path = API;
+			path = Remote;
 			sourceTree = "<group>";
 		};
 		EE932FEE2FAB2D57003AAE83 /* Network */ = {
@@ -262,6 +262,14 @@
 				EE932FF52FAB2E0D003AAE83 /* DetailView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EEF5BC6B2FAB497200EDD31B /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				EE932FE12FAAC5D7003AAE83 /* JailbreakService.swift */,
+			);
+			path = Security;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
