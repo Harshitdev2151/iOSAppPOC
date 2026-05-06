@@ -7,4 +7,4 @@
 
 
 4-UT covergae-
-<img width="1179" height="2556" alt="Simulator Screenshot - iPhone 15 - 2026-05-06 at 21 58 39" src="https://github.com/user-attachments/assets/c77ff031-07a8-4a96-8c6e-61fe9fb79f01" />
+<img width="777" height="248" alt="Screenshot 2026-05-06 at 10 16 11 PM" src="https://github.com/user-attachments/assets/955cb790-bc11-4a36-931b-6a7ac3102bb6" />
