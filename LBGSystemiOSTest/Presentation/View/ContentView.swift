@@ -39,15 +39,3 @@ struct ContentView: View {
         }
     }
 }
-
-struct DetailView: View {
-    let post: Post
-
-    var body: some View {
-        VStack {
-            Text("ID: \(post.id)")
-            Text(post.title)
-        }
-        .navigationTitle("Detail")
-    }
-}

@@ -1,5 +1,5 @@
 //
-//  FetchPostsUseCaseImpl.swift
+//  FetchPostsUseCase.swift
 //  LBGSystemiOSTest
 //
 //  Created by Harshit Kumar on 06/05/26.

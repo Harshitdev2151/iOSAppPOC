@@ -14,11 +14,8 @@
 		EE2A1D792FA9C7D000F10518 /* LBGSystemiOSTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D782FA9C7D000F10518 /* LBGSystemiOSTestTests.swift */; };
 		EE2A1D832FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D822FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift */; };
 		EE2A1D852FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D842FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift */; };
-		EE2A1D952FA9CF4200F10518 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = EE2A1D942FA9CF4200F10518 /* .swiftlint.yml */; };
 		EE2A1D972FAAA77000F10518 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D962FAAA77000F10518 /* Post.swift */; };
 		EE2A1D992FAAA78B00F10518 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D982FAAA78B00F10518 /* APIService.swift */; };
-		EE2A1D9B2FAAA7AD00F10518 /* PostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D9A2FAAA7AD00F10518 /* PostRepositoryImpl.swift */; };
-		EE2A1D9D2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D9C2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift */; };
 		EE2A1D9F2FAAA7EB00F10518 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */; };
 		EE2A1DA12FAAA7FE00F10518 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */; };
 		EE932FDA2FAAAD06003AAE83 /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FD92FAAAD06003AAE83 /* MockNetwork.swift */; };
@@ -26,6 +23,10 @@
 		EE932FDE2FAAAE03003AAE83 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FDD2FAAAE03003AAE83 /* MockAPIService.swift */; };
 		EE932FE02FAAAEC8003AAE83 /* MockRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FDF2FAAAEC8003AAE83 /* MockRepository.swift */; };
 		EE932FE22FAAC5D7003AAE83 /* JailbreakService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FE12FAAC5D7003AAE83 /* JailbreakService.swift */; };
+		EE932FE92FAB2C91003AAE83 /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FE82FAB2C91003AAE83 /* PostRepository.swift */; };
+		EE932FEC2FAB2CDA003AAE83 /* FetchPostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FEB2FAB2CDA003AAE83 /* FetchPostsUseCase.swift */; };
+		EE932FF12FAB2D8D003AAE83 /* PostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FF02FAB2D8D003AAE83 /* PostRepositoryImpl.swift */; };
+		EE932FF62FAB2E0D003AAE83 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FF52FAB2E0D003AAE83 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +57,8 @@
 		EE2A1D7E2FA9C7D000F10518 /* LBGSystemiOSTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LBGSystemiOSTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2A1D822FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBGSystemiOSTestUITests.swift; sourceTree = "<group>"; };
 		EE2A1D842FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LBGSystemiOSTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EE2A1D942FA9CF4200F10518 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		EE2A1D962FAAA77000F10518 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		EE2A1D982FAAA78B00F10518 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		EE2A1D9A2FAAA7AD00F10518 /* PostRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImpl.swift; sourceTree = "<group>"; };
-		EE2A1D9C2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCaseImpl.swift; sourceTree = "<group>"; };
 		EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		EE932FD92FAAAD06003AAE83 /* MockNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
@@ -68,6 +66,11 @@
 		EE932FDD2FAAAE03003AAE83 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 		EE932FDF2FAAAEC8003AAE83 /* MockRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepository.swift; sourceTree = "<group>"; };
 		EE932FE12FAAC5D7003AAE83 /* JailbreakService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakService.swift; sourceTree = "<group>"; };
+		EE932FE82FAB2C91003AAE83 /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
+		EE932FEB2FAB2CDA003AAE83 /* FetchPostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCase.swift; sourceTree = "<group>"; };
+		EE932FF02FAB2D8D003AAE83 /* PostRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImpl.swift; sourceTree = "<group>"; };
+		EE932FF52FAB2E0D003AAE83 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		EEF5BC6A2FAB425C00EDD31B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +101,7 @@
 		EE2A1D5B2FA9C7CD00F10518 = {
 			isa = PBXGroup;
 			children = (
-				EE2A1D942FA9CF4200F10518 /* .swiftlint.yml */,
+				EEF5BC6A2FAB425C00EDD31B /* .swiftlint.yml */,
 				EE2A1D662FA9C7CD00F10518 /* LBGSystemiOSTest */,
 				EE2A1D772FA9C7D000F10518 /* LBGSystemiOSTestTests */,
 				EE2A1D812FA9C7D000F10518 /* LBGSystemiOSTestUITests */,
@@ -119,16 +122,12 @@
 		EE2A1D662FA9C7CD00F10518 /* LBGSystemiOSTest */ = {
 			isa = PBXGroup;
 			children = (
-				EE2A1D672FA9C7CD00F10518 /* LBGSystemiOSTestApp.swift */,
-				EE2A1D692FA9C7CD00F10518 /* ContentView.swift */,
+				EE932FF22FAB2DCA003AAE83 /* Presentation */,
+				EE932FE52FAB2C06003AAE83 /* Data */,
+				EE932FE42FAB2BFA003AAE83 /* Domain */,
+				EE932FE32FAB2BAD003AAE83 /* App */,
 				EE2A1D6B2FA9C7D000F10518 /* Assets.xcassets */,
 				EE2A1D6D2FA9C7D000F10518 /* Preview Content */,
-				EE2A1D962FAAA77000F10518 /* Post.swift */,
-				EE2A1D982FAAA78B00F10518 /* APIService.swift */,
-				EE2A1D9A2FAAA7AD00F10518 /* PostRepositoryImpl.swift */,
-				EE2A1D9C2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift */,
-				EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */,
-				EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */,
 				EE932FE12FAAC5D7003AAE83 /* JailbreakService.swift */,
 			);
 			path = LBGSystemiOSTest;
@@ -163,6 +162,108 @@
 			path = LBGSystemiOSTestUITests;
 			sourceTree = "<group>";
 		};
+		EE932FE32FAB2BAD003AAE83 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A1D672FA9C7CD00F10518 /* LBGSystemiOSTestApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EE932FE42FAB2BFA003AAE83 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EE932FEA2FAB2CB7003AAE83 /* UseCase */,
+				EE932FE72FAB2C7F003AAE83 /* Repository */,
+				EE932FE62FAB2C65003AAE83 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EE932FE52FAB2C06003AAE83 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EE932FEF2FAB2D70003AAE83 /* Repository */,
+				EE932FEE2FAB2D57003AAE83 /* Network */,
+				EE932FED2FAB2D43003AAE83 /* API */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EE932FE62FAB2C65003AAE83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A1D962FAAA77000F10518 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE932FE72FAB2C7F003AAE83 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EE932FE82FAB2C91003AAE83 /* PostRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EE932FEA2FAB2CB7003AAE83 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				EE932FEB2FAB2CDA003AAE83 /* FetchPostsUseCase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		EE932FED2FAB2D43003AAE83 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A1D982FAAA78B00F10518 /* APIService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		EE932FEE2FAB2D57003AAE83 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EE932FEF2FAB2D70003AAE83 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EE932FF02FAB2D8D003AAE83 /* PostRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EE932FF22FAB2DCA003AAE83 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EE932FF42FAB2DE7003AAE83 /* View */,
+				EE932FF32FAB2DD3003AAE83 /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EE932FF32FAB2DD3003AAE83 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE932FF42FAB2DE7003AAE83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A1D692FA9C7CD00F10518 /* ContentView.swift */,
+				EE932FF52FAB2E0D003AAE83 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,10 +271,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE2A1D882FA9C7D000F10518 /* Build configuration list for PBXNativeTarget "LBGSystemiOSTest" */;
 			buildPhases = (
+				EEF5BC682FAB3D3B00EDD31B /* ShellScript */,
 				EE2A1D602FA9C7CD00F10518 /* Sources */,
 				EE2A1D612FA9C7CD00F10518 /* Frameworks */,
 				EE2A1D622FA9C7CD00F10518 /* Resources */,
-				EE2A1D912FA9CCA800F10518 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -268,7 +369,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE2A1D952FA9CF4200F10518 /* .swiftlint.yml in Resources */,
 				EE2A1D6F2FA9C7D000F10518 /* Preview Assets.xcassets in Resources */,
 				EE2A1D6C2FA9C7D000F10518 /* Assets.xcassets in Resources */,
 			);
@@ -291,7 +391,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EE2A1D912FA9CCA800F10518 /* ShellScript */ = {
+		EEF5BC682FAB3D3B00EDD31B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -307,7 +407,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed\"\nfi\n";
+			shellScript = "if which swiftlint > /dev/null; then\n  export PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"\n  cd \"$SRCROOT\"\n\n  echo \"Current Dir: $(pwd)\"\n  ls -la\n\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -317,13 +417,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE2A1DA12FAAA7FE00F10518 /* PostViewModel.swift in Sources */,
+				EE932FE92FAB2C91003AAE83 /* PostRepository.swift in Sources */,
 				EE2A1D972FAAA77000F10518 /* Post.swift in Sources */,
 				EE2A1D6A2FA9C7CD00F10518 /* ContentView.swift in Sources */,
+				EE932FEC2FAB2CDA003AAE83 /* FetchPostsUseCase.swift in Sources */,
+				EE932FF62FAB2E0D003AAE83 /* DetailView.swift in Sources */,
 				EE2A1D992FAAA78B00F10518 /* APIService.swift in Sources */,
 				EE2A1D682FA9C7CD00F10518 /* LBGSystemiOSTestApp.swift in Sources */,
 				EE932FE22FAAC5D7003AAE83 /* JailbreakService.swift in Sources */,
-				EE2A1D9D2FAAA7C600F10518 /* FetchPostsUseCaseImpl.swift in Sources */,
-				EE2A1D9B2FAAA7AD00F10518 /* PostRepositoryImpl.swift in Sources */,
+				EE932FF12FAB2D8D003AAE83 /* PostRepositoryImpl.swift in Sources */,
 				EE2A1D9F2FAAA7EB00F10518 /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +595,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LBGSystemiOSTest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -521,6 +624,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LBGSystemiOSTest/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

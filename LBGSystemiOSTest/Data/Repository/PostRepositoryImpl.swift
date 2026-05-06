@@ -6,11 +6,6 @@
 //
 
 import Foundation
-
-protocol PostRepository {
-    func getPosts() async throws -> [Post]
-}
-
 final class PostRepositoryImpl: PostRepository {
 
     private let api: APIServiceProtocol
