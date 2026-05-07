@@ -29,10 +29,10 @@ final class JailbreakService: DeviceSecurity {
             "/private/var/lib/apt/"
         ]
 
-        for path in suspiciousPaths {
-            if FileManager.default.fileExists(atPath: path) {
-                return true
-            }
+        if suspiciousPaths.contains(where: {
+            FileManager.default.fileExists(atPath: $0)
+        }) {
+            return true
         }
         // MARK: - Can Open Cydia
 
