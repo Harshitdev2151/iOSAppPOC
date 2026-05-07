@@ -6,32 +6,36 @@
 //
 
 import Foundation
-import SwiftUI
-@MainActor
+
 final class PostViewModel: ObservableObject {
 
     @Published var posts: [Post] = []
     @Published var isLoading = false
-    @Published var errorMessage: String?
+
+    @Published var showErrorAlert = false
+    @Published var errorMessage = ""
 
     private let useCase: FetchPostsUseCase
 
     init(useCase: FetchPostsUseCase) {
         self.useCase = useCase
     }
-
+    @MainActor
     func fetchPosts() async {
+
         isLoading = true
-        errorMessage = nil
 
         do {
             posts = try await useCase.execute()
         } catch {
+
             if (error as? URLError)?.code == .notConnectedToInternet {
-                errorMessage = "No Internet"
+                errorMessage = AppStrings.noInternet
             } else {
-                errorMessage = "Failed to load data"
+                errorMessage = AppStrings.failedToLoadPosts
             }
+
+            showErrorAlert = true
         }
 
         isLoading = false

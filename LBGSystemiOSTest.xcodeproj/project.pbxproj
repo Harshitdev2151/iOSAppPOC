@@ -18,6 +18,10 @@
 		EE2A1D992FAAA78B00F10518 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D982FAAA78B00F10518 /* APIService.swift */; };
 		EE2A1D9F2FAAA7EB00F10518 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */; };
 		EE2A1DA12FAAA7FE00F10518 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */; };
+		EE6300302FAC68A2004D3B14 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63002F2FAC68A2004D3B14 /* AppStrings.swift */; };
+		EE6300322FAC68BF004D3B14 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6300312FAC68BF004D3B14 /* APIConstants.swift */; };
+		EE6300342FAC68D2004D3B14 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6300332FAC68D2004D3B14 /* AccessibilityIdentifiers.swift */; };
+		EE6300362FAC69CE004D3B14 /* SystemImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6300352FAC69CE004D3B14 /* SystemImages.swift */; };
 		EE932FDA2FAAAD06003AAE83 /* MockNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FD92FAAAD06003AAE83 /* MockNetwork.swift */; };
 		EE932FDC2FAAAD1C003AAE83 /* PostViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FDB2FAAAD1C003AAE83 /* PostViewModelTests.swift */; };
 		EE932FDE2FAAAE03003AAE83 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FDD2FAAAE03003AAE83 /* MockAPIService.swift */; };
@@ -64,6 +68,10 @@
 		EE2A1D982FAAA78B00F10518 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		EE63002F2FAC68A2004D3B14 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		EE6300312FAC68BF004D3B14 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		EE6300332FAC68D2004D3B14 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
+		EE6300352FAC69CE004D3B14 /* SystemImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemImages.swift; sourceTree = "<group>"; };
 		EE932FD92FAAAD06003AAE83 /* MockNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetwork.swift; sourceTree = "<group>"; };
 		EE932FDB2FAAAD1C003AAE83 /* PostViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModelTests.swift; sourceTree = "<group>"; };
 		EE932FDD2FAAAE03003AAE83 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 		EE2A1D662FA9C7CD00F10518 /* LBGSystemiOSTest */ = {
 			isa = PBXGroup;
 			children = (
+				EE63002E2FAC666C004D3B14 /* Constant */,
 				EE932FF22FAB2DCA003AAE83 /* Presentation */,
 				EE932FE52FAB2C06003AAE83 /* Data */,
 				EE932FE42FAB2BFA003AAE83 /* Domain */,
@@ -168,6 +177,17 @@
 				EEF5BC722FABA88800EDD31B /* DetailViewUITests.swift */,
 			);
 			path = LBGSystemiOSTestUITests;
+			sourceTree = "<group>";
+		};
+		EE63002E2FAC666C004D3B14 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				EE63002F2FAC68A2004D3B14 /* AppStrings.swift */,
+				EE6300312FAC68BF004D3B14 /* APIConstants.swift */,
+				EE6300332FAC68D2004D3B14 /* AccessibilityIdentifiers.swift */,
+				EE6300352FAC69CE004D3B14 /* SystemImages.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		EE932FE32FAB2BAD003AAE83 /* App */ = {
@@ -435,13 +455,17 @@
 			files = (
 				EE2A1DA12FAAA7FE00F10518 /* PostViewModel.swift in Sources */,
 				EE932FE92FAB2C91003AAE83 /* PostRepository.swift in Sources */,
+				EE6300322FAC68BF004D3B14 /* APIConstants.swift in Sources */,
 				EE2A1D972FAAA77000F10518 /* Post.swift in Sources */,
 				EE2A1D6A2FA9C7CD00F10518 /* ContentView.swift in Sources */,
 				EE932FEC2FAB2CDA003AAE83 /* FetchPostsUseCase.swift in Sources */,
+				EE6300362FAC69CE004D3B14 /* SystemImages.swift in Sources */,
 				EE932FF62FAB2E0D003AAE83 /* DetailView.swift in Sources */,
+				EE6300302FAC68A2004D3B14 /* AppStrings.swift in Sources */,
 				EE2A1D992FAAA78B00F10518 /* APIService.swift in Sources */,
 				EE2A1D682FA9C7CD00F10518 /* LBGSystemiOSTestApp.swift in Sources */,
 				EE932FE22FAAC5D7003AAE83 /* JailbreakService.swift in Sources */,
+				EE6300342FAC68D2004D3B14 /* AccessibilityIdentifiers.swift in Sources */,
 				EE932FF12FAB2D8D003AAE83 /* PostRepositoryImpl.swift in Sources */,
 				EE2A1D9F2FAAA7EB00F10518 /* NetworkMonitor.swift in Sources */,
 			);

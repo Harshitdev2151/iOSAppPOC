@@ -11,11 +11,11 @@ struct ContentView: View {
     @StateObject var vm: PostViewModel
 
     var body: some View {
+
         NavigationStack {
 
             ZStack {
 
-                // Background gradient
                 LinearGradient(
                     colors: [.blue.opacity(0.2), .white],
                     startPoint: .top,
@@ -25,14 +25,29 @@ struct ContentView: View {
 
                 content
             }
-            .navigationTitle("Posts")
-            .navigationBarTitleDisplayMode(.large)
-            .navigationDestination(for: Post.self) { post in
-                DetailView(post: post)
+            .navigationTitle(AppStrings.postsTitle)
+            .navigationDestination(for: Post.self) {
+                DetailView(post: $0)
             }
-        }
-        .task {
-            await vm.fetchPosts()
+            .task {
+                await vm.fetchPosts()
+            }
+            .alert(AppStrings.errorTitle,
+                   isPresented: $vm.showErrorAlert) {
+
+                Button(AppStrings.retry) {
+                    Task {
+                        await vm.fetchPosts()
+                    }
+                }
+                .accessibilityIdentifier(AccessibilityIdentifiers.retryButton)
+
+                Button(AppStrings.cancel,
+                       role: .cancel) {}
+
+            } message: {
+                Text(vm.errorMessage)
+            }
         }
     }
 
@@ -40,23 +55,11 @@ struct ContentView: View {
     private var content: some View {
 
         if vm.isLoading {
-            ProgressView("Loading Posts...")
-                .font(.headline)
-        } else if let error = vm.errorMessage {
-            VStack(spacing: 16) {
-                Text("⚠️ \(error)")
-                    .foregroundColor(.red)
-
-                Button("Retry") {
-                    Task {
-                        await vm.fetchPosts()
-                    }
-                }
-                .buttonStyle(.borderedProminent)
-            }
+            ProgressView(AppStrings.loading)
         } else {
             ScrollView {
                 LazyVStack(spacing: 16) {
+
                     ForEach(vm.posts) { post in
 
                         NavigationLink(value: post) {
@@ -70,25 +73,31 @@ struct ContentView: View {
         }
     }
 }
+
 struct PostCardView: View {
 
     let post: Post
 
     var body: some View {
+
         VStack(alignment: .leading, spacing: 10) {
 
-            Text("Post #\(post.id)")
+            Text("\(AppStrings.postPrefix)\(post.id)")
                 .font(.caption)
                 .foregroundColor(.gray)
+
             Text(post.title.capitalized)
-                .accessibilityIdentifier("postTitle")
+                .accessibilityIdentifier(
+                    AccessibilityIdentifiers.postTitle
+                )
                 .font(.headline)
                 .foregroundColor(.primary)
                 .lineLimit(2)
 
             HStack {
                 Spacer()
-                Image(systemName: "arrow.right.circle.fill")
+
+                Image(systemName: SystemImages.arrowRight)
                     .foregroundColor(.blue)
             }
         }
@@ -96,7 +105,13 @@ struct PostCardView: View {
         .background(
             RoundedRectangle(cornerRadius: 16)
                 .fill(Color.white)
-                .shadow(color: .black.opacity(0.1), radius: 6)
+                .shadow(
+                    color: .black.opacity(0.1),
+                    radius: 6
+                )
+        )
+        .accessibilityIdentifier(
+            AccessibilityIdentifiers.postCard
         )
     }
 }

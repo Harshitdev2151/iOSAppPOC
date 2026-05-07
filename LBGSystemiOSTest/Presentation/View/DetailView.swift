@@ -5,7 +5,6 @@
 //  Created by Harshit Kumar on 06/05/26.
 //
 
-import Foundation
 import SwiftUI
 
 struct DetailView: View {
@@ -15,20 +14,20 @@ struct DetailView: View {
     var body: some View {
         VStack(spacing: 20) {
 
-            Text("Post ID: \(post.id)")
+            Text("\(AppStrings.postIDPrefix) \(post.id)")
                 .font(.caption)
                 .foregroundColor(.gray)
-                .accessibilityIdentifier("postIDText")
+                .accessibilityIdentifier(AccessibilityIdentifiers.postIDText)
 
             Text(post.title.capitalized)
                 .font(.title2)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
-                .accessibilityIdentifier("postTitleText")
+                .accessibilityIdentifier(AccessibilityIdentifiers.postTitle)
 
             Spacer()
         }
         .padding()
-        .navigationTitle("Details")
+        .navigationTitle(AppStrings.detailsTitle)
     }
 }
