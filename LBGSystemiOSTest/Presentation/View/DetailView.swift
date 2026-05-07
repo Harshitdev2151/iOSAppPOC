@@ -23,7 +23,9 @@ struct DetailView: View {
                 .font(.title2)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
-                .accessibilityIdentifier(AccessibilityIdentifiers.postTitle)
+                .accessibilityIdentifier(
+                    AccessibilityIdentifiers.postTitleText
+                )
 
             Spacer()
         }

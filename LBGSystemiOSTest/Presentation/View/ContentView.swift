@@ -65,6 +65,9 @@ struct ContentView: View {
                         NavigationLink(value: post) {
                             PostCardView(post: post)
                         }
+                        .accessibilityIdentifier(
+                            AccessibilityIdentifiers.postCard
+                        )
                         .buttonStyle(.plain)
                     }
                 }
@@ -77,7 +80,6 @@ struct ContentView: View {
 struct PostCardView: View {
 
     let post: Post
-
     var body: some View {
 
         VStack(alignment: .leading, spacing: 10) {
@@ -87,9 +89,6 @@ struct PostCardView: View {
                 .foregroundColor(.gray)
 
             Text(post.title.capitalized)
-                .accessibilityIdentifier(
-                    AccessibilityIdentifiers.postTitle
-                )
                 .font(.headline)
                 .foregroundColor(.primary)
                 .lineLimit(2)
@@ -109,9 +108,6 @@ struct PostCardView: View {
                     color: .black.opacity(0.1),
                     radius: 6
                 )
-        )
-        .accessibilityIdentifier(
-            AccessibilityIdentifiers.postCard
         )
     }
 }

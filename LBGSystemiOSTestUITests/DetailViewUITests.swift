@@ -7,32 +7,43 @@ final class DetailViewUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        let post = app.staticTexts["postTitle"].firstMatch
+        let postCard =
+        app.buttons["postCard"].firstMatch
 
-        XCTAssertTrue(post.waitForExistence(timeout: 10))
+        XCTAssertTrue(
+            postCard.waitForExistence(timeout: 10)
+        )
 
-        post.tap()
+        postCard.tap()
 
-        XCTAssertTrue(app.navigationBars["Details"].exists)
+        XCTAssertTrue(
+            app.navigationBars["Details"]
+                .waitForExistence(timeout: 5)
+        )
     }
-    
+
     func test_detailView_elementsExist() {
 
         let app = XCUIApplication()
         app.launch()
 
-        // Navigate to detail screen
-        // Wait for first cell
-        let post = app.staticTexts["postTitle"].firstMatch
+        let postCard =
+        app.buttons["postCard"].firstMatch
 
-        XCTAssertTrue(post.waitForExistence(timeout: 10))
+        XCTAssertTrue(
+            postCard.waitForExistence(timeout: 10)
+        )
 
-        post.tap()
+        postCard.tap()
 
-        // Verify ID text exists
-        XCTAssertTrue(app.staticTexts["postIDText"].exists)
+        XCTAssertTrue(
+            app.staticTexts["postIDText"]
+                .waitForExistence(timeout: 5)
+        )
 
-        // Verify title text exists
-        XCTAssertTrue(app.staticTexts["postTitleText"].exists)
+        XCTAssertTrue(
+            app.staticTexts["postTitleText"]
+                .waitForExistence(timeout: 5)
+        )
     }
 }

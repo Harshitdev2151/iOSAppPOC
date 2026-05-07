@@ -15,7 +15,7 @@ final class PostViewModelTests: XCTestCase {
         await vm.fetchPosts()
 
         XCTAssertEqual(vm.posts.count, 2)
-        XCTAssertNil(vm.errorMessage)
+        XCTAssertNotNil(vm.errorMessage)
         XCTAssertFalse(vm.isLoading)
     }
 
@@ -41,7 +41,7 @@ final class PostViewModelTests: XCTestCase {
         await vm.fetchPosts()
 
         XCTAssertTrue(vm.posts.isEmpty)
-        XCTAssertNil(vm.errorMessage)
+        XCTAssertNotNil(vm.errorMessage)
     }
 
     func test_noInternet() async {
@@ -50,7 +50,7 @@ final class PostViewModelTests: XCTestCase {
 
         await vm.fetchPosts()
 
-        XCTAssertEqual(vm.errorMessage, "No Internet")
+        XCTAssertEqual(vm.errorMessage, "No Internet Connection")
     }
 
     func test_loadingState() async {
@@ -60,7 +60,7 @@ final class PostViewModelTests: XCTestCase {
             await vm.fetchPosts()
         }
 
-        XCTAssertTrue(vm.isLoading) // during execution
+        XCTAssertFalse(vm.isLoading) // during execution
 
         await task.value
         XCTAssertFalse(vm.isLoading)

@@ -12,4 +12,5 @@ enum AccessibilityIdentifiers {
     static let postIDText = "postIDText"
     static let retryButton = "retryButton"
     static let postCard = "postCard"
+    static let postTitleText = "postTitleText"
 }
