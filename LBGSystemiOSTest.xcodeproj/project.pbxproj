@@ -18,6 +18,10 @@
 		EE2A1D992FAAA78B00F10518 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D982FAAA78B00F10518 /* APIService.swift */; };
 		EE2A1D9F2FAAA7EB00F10518 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */; };
 		EE2A1DA12FAAA7FE00F10518 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */; };
+		EE4AD46A2FAC990800B6D24A /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4AD4692FAC990800B6D24A /* AppRootView.swift */; };
+		EE4AD46C2FAC993A00B6D24A /* MockSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4AD46B2FAC993A00B6D24A /* MockSecurity.swift */; };
+		EE4AD46E2FAC995700B6D24A /* JailbreakServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4AD46D2FAC995700B6D24A /* JailbreakServiceTests.swift */; };
+		EE4AD4702FAC998A00B6D24A /* JailbreakBlockedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4AD46F2FAC998A00B6D24A /* JailbreakBlockedUITests.swift */; };
 		EE6300302FAC68A2004D3B14 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE63002F2FAC68A2004D3B14 /* AppStrings.swift */; };
 		EE6300322FAC68BF004D3B14 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6300312FAC68BF004D3B14 /* APIConstants.swift */; };
 		EE6300342FAC68D2004D3B14 /* AccessibilityIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6300332FAC68D2004D3B14 /* AccessibilityIdentifiers.swift */; };
@@ -31,6 +35,7 @@
 		EE932FEC2FAB2CDA003AAE83 /* FetchPostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FEB2FAB2CDA003AAE83 /* FetchPostsUseCase.swift */; };
 		EE932FF12FAB2D8D003AAE83 /* PostRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FF02FAB2D8D003AAE83 /* PostRepositoryImpl.swift */; };
 		EE932FF62FAB2E0D003AAE83 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE932FF52FAB2E0D003AAE83 /* DetailView.swift */; };
+		EE9ACD962FAC956F00BB2FCB /* JailbreakBlockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9ACD952FAC956F00BB2FCB /* JailbreakBlockedView.swift */; };
 		EEF5BC6D2FABA1B600EDD31B /* PostRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5BC6C2FABA1B600EDD31B /* PostRepositoryTests.swift */; };
 		EEF5BC6F2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5BC6E2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift */; };
 		EEF5BC732FABA88800EDD31B /* DetailViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF5BC722FABA88800EDD31B /* DetailViewUITests.swift */; };
@@ -68,6 +73,10 @@
 		EE2A1D982FAAA78B00F10518 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		EE2A1D9E2FAAA7EB00F10518 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		EE2A1DA02FAAA7FE00F10518 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		EE4AD4692FAC990800B6D24A /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		EE4AD46B2FAC993A00B6D24A /* MockSecurity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSecurity.swift; sourceTree = "<group>"; };
+		EE4AD46D2FAC995700B6D24A /* JailbreakServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakServiceTests.swift; sourceTree = "<group>"; };
+		EE4AD46F2FAC998A00B6D24A /* JailbreakBlockedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakBlockedUITests.swift; sourceTree = "<group>"; };
 		EE63002F2FAC68A2004D3B14 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		EE6300312FAC68BF004D3B14 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		EE6300332FAC68D2004D3B14 /* AccessibilityIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifiers.swift; sourceTree = "<group>"; };
@@ -81,6 +90,8 @@
 		EE932FEB2FAB2CDA003AAE83 /* FetchPostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCase.swift; sourceTree = "<group>"; };
 		EE932FF02FAB2D8D003AAE83 /* PostRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryImpl.swift; sourceTree = "<group>"; };
 		EE932FF52FAB2E0D003AAE83 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		EE9ACD952FAC956F00BB2FCB /* JailbreakBlockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakBlockedView.swift; sourceTree = "<group>"; };
+		EE9ACD972FAC964600BB2FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EEF5BC6A2FAB425C00EDD31B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		EEF5BC6C2FABA1B600EDD31B /* PostRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepositoryTests.swift; sourceTree = "<group>"; };
 		EEF5BC6E2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCaseTests.swift; sourceTree = "<group>"; };
@@ -136,6 +147,7 @@
 		EE2A1D662FA9C7CD00F10518 /* LBGSystemiOSTest */ = {
 			isa = PBXGroup;
 			children = (
+				EE9ACD972FAC964600BB2FCB /* Info.plist */,
 				EE63002E2FAC666C004D3B14 /* Constant */,
 				EE932FF22FAB2DCA003AAE83 /* Presentation */,
 				EE932FE52FAB2C06003AAE83 /* Data */,
@@ -165,6 +177,8 @@
 				EE932FDF2FAAAEC8003AAE83 /* MockRepository.swift */,
 				EEF5BC6C2FABA1B600EDD31B /* PostRepositoryTests.swift */,
 				EEF5BC6E2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift */,
+				EE4AD46B2FAC993A00B6D24A /* MockSecurity.swift */,
+				EE4AD46D2FAC995700B6D24A /* JailbreakServiceTests.swift */,
 			);
 			path = LBGSystemiOSTestTests;
 			sourceTree = "<group>";
@@ -175,6 +189,7 @@
 				EE2A1D822FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift */,
 				EE2A1D842FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift */,
 				EEF5BC722FABA88800EDD31B /* DetailViewUITests.swift */,
+				EE4AD46F2FAC998A00B6D24A /* JailbreakBlockedUITests.swift */,
 			);
 			path = LBGSystemiOSTestUITests;
 			sourceTree = "<group>";
@@ -289,6 +304,8 @@
 			children = (
 				EE2A1D692FA9C7CD00F10518 /* ContentView.swift */,
 				EE932FF52FAB2E0D003AAE83 /* DetailView.swift */,
+				EE9ACD952FAC956F00BB2FCB /* JailbreakBlockedView.swift */,
+				EE4AD4692FAC990800B6D24A /* AppRootView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -462,6 +479,8 @@
 				EE6300362FAC69CE004D3B14 /* SystemImages.swift in Sources */,
 				EE932FF62FAB2E0D003AAE83 /* DetailView.swift in Sources */,
 				EE6300302FAC68A2004D3B14 /* AppStrings.swift in Sources */,
+				EE9ACD962FAC956F00BB2FCB /* JailbreakBlockedView.swift in Sources */,
+				EE4AD46A2FAC990800B6D24A /* AppRootView.swift in Sources */,
 				EE2A1D992FAAA78B00F10518 /* APIService.swift in Sources */,
 				EE2A1D682FA9C7CD00F10518 /* LBGSystemiOSTestApp.swift in Sources */,
 				EE932FE22FAAC5D7003AAE83 /* JailbreakService.swift in Sources */,
@@ -480,8 +499,10 @@
 				EEF5BC6F2FABA1CF00EDD31B /* FetchPostsUseCaseTests.swift in Sources */,
 				EE932FE02FAAAEC8003AAE83 /* MockRepository.swift in Sources */,
 				EEF5BC6D2FABA1B600EDD31B /* PostRepositoryTests.swift in Sources */,
+				EE4AD46E2FAC995700B6D24A /* JailbreakServiceTests.swift in Sources */,
 				EE932FDA2FAAAD06003AAE83 /* MockNetwork.swift in Sources */,
 				EE2A1D792FA9C7D000F10518 /* LBGSystemiOSTestTests.swift in Sources */,
+				EE4AD46C2FAC993A00B6D24A /* MockSecurity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +512,7 @@
 			files = (
 				EE2A1D832FA9C7D000F10518 /* LBGSystemiOSTestUITests.swift in Sources */,
 				EEF5BC732FABA88800EDD31B /* DetailViewUITests.swift in Sources */,
+				EE4AD4702FAC998A00B6D24A /* JailbreakBlockedUITests.swift in Sources */,
 				EE2A1D852FA9C7D000F10518 /* LBGSystemiOSTestUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,6 +663,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LBGSystemiOSTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -670,6 +693,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LBGSystemiOSTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

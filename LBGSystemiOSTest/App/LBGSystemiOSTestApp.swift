@@ -6,39 +6,14 @@
 //
 
 import SwiftUI
+
 @main
 struct LBGSystemiOSTestApp: App {
-
-    init() {
-
-        let security = JailbreakService()
-
-        if security.isJailbroken() {
-            print("⚠️ Jailbroken device detected")
-        }
-    }
 
     var body: some Scene {
 
         WindowGroup {
-
-            let network = NetworkMonitor()
-            let api = APIService()
-
-            let repo = PostRepositoryImpl(
-                api: api,
-                network: network
-            )
-
-            let useCase = FetchPostsUseCaseImpl(
-                repository: repo
-            )
-
-            ContentView(
-                vm: PostViewModel(
-                    useCase: useCase
-                )
-            )
+            AppRootView()
         }
     }
 }

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 protocol DeviceSecurity {
     func isJailbroken() -> Bool
 }
@@ -19,16 +18,30 @@ final class JailbreakService: DeviceSecurity {
         return false
         #else
 
-        let paths = [
+        // MARK: - Suspicious Paths
+
+        let suspiciousPaths = [
             "/Applications/Cydia.app",
+            "/Library/MobileSubstrate/MobileSubstrate.dylib",
             "/bin/bash",
-            "/usr/sbin/sshd"
+            "/usr/sbin/sshd",
+            "/etc/apt",
+            "/private/var/lib/apt/"
         ]
 
-        return paths.contains {
-            FileManager.default.fileExists(atPath: $0)
+        for path in suspiciousPaths {
+            if FileManager.default.fileExists(atPath: path) {
+                return true
+            }
+        }
+        // MARK: - Can Open Cydia
+
+        if let url = URL(string: "cydia://package/com.example.package"),
+           UIApplication.shared.canOpenURL(url) {
+            return true
         }
 
+        return false
         #endif
     }
 }

@@ -28,4 +28,15 @@ enum AppStrings {
     // MARK: - Detail
     static let postIDPrefix = "Post ID:"
     static let postPrefix = "Post #"
+    // MARK: - Jailbreak
+
+    static let securityRiskTitle =
+    "Security Risk Detected"
+
+    static let jailbreakMessage =
+    "This device appears to be jailbroken. " +
+    "For security reasons, this app cannot be used."
+
+    static let secureDeviceMessage =
+    "Please use a secure device."
 }

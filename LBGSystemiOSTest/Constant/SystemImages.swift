@@ -9,4 +9,5 @@ import Foundation
 
 enum SystemImages {
     static let arrowRight = "arrow.right.circle.fill"
+    static let lockShield = "lock.shield"
 }
